@@ -47,8 +47,6 @@ export class SensoresComponent implements OnInit {
     const temperatura = notificaciones[notificaciones.length - 2];
     this.temperatura =
       temperatura.name === 'Temperatura' ? parseInt(temperatura.value) : 0;
-
-    console.log(notificaciones[notificaciones.length - 2]);
   }
   ngOnDestroy() {
     this.subscription.unsubscribe();
