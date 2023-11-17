@@ -1,0 +1,14 @@
+<!-- termometro.component.html -->
+<div class="container">
+    <div class="Thermostat">
+        <div class="ring">
+            <div class="nivel" [style.height.%]="indicatorPosition"></div>
+            <div class="border"></div>
+        </div>
+
+        <div class="status">
+            <div class="temp">{{ temperatura }}°C</div>
+            <div class="indicator" [style.transform]="'rotate(' + (indicatorPosition) + 'deg)'"></div>
+        </div>
+    </div>
+</div>
